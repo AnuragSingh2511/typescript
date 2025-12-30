@@ -7,9 +7,9 @@ Type-check
 Consistency
 */
 
-function greet(name){
-    return "Hello, ", name;
+function greet(name: string): string {
+    return `Hello ${name}`
 }
 
 console.log(greet("anu"));
-// console.log(greet(42));
+console.log(greet(42));
